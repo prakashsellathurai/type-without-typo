@@ -9,5 +9,5 @@ def hello():
 def checker():
     text = request.args.get('text')
     return render_template('suggestion.html',suggestion=correction(text))
-if __name__ == "__main__":
-    app.run()
+
+app.run(host='0.0.0.0', port=8080)
