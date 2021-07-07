@@ -1,6 +1,7 @@
-# spell-checker
-The Web app version of the toy spelling corrector that achieves 80 or 90% accuracy at a processing speed of at least 10 words per second in about half a page of code,
-which was originally implemented by  [Peter Norvig](https://norvig.com/)  
+# Type Without Typo
 
-For learn how it works, check https://norvig.com/spell-correct.html
+Write Essays or notes without hassle over common spelling mistakes
 
+### Built on:
+- [Next-js](https://nextjs.org/)
+- [vercel](https://vercel.com/)
