@@ -10,4 +10,4 @@ def checker():
     text = request.args.get('text')
     return render_template('suggestion.html',suggestion=correction(text))
 
-app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=8080,debug=True)
