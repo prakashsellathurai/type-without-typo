@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
       </header>
       <main className={styles.content}>{children}</main>
       <footer className={styles.footerBar}>
-        <hr className={styles.hr} />
+        {/* <hr className={styles.hr} /> */}
         <div className={styles.github}>
           <a
             href="https://github.com/prakashsellathurai/type-without-typo"

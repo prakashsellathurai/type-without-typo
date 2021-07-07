@@ -5,7 +5,7 @@
   max-width: $max-width;
   padding: 1rem;
   margin: 1rem;
-  background: $secondary;
+  // background: $secondary;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -18,12 +18,17 @@
   font-size: 1.5rem;
   color: $primary;
   font-weight: 700;
-  
+  -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
     img {
     width: 10rem;
     height: 10rem;
     opacity: 0.75;
     margin: -3rem 0rem -3rem 0rem;
+  }
+  img:hover {
+    opacity: 1;
   }
 }
 
@@ -31,6 +36,8 @@
   width: 100%;
   max-width: $max-width;
   padding: 1rem 0 1rem 1rem;
+   background: $secondary;
+   border-radius: 25px;
   margin: 0;
 }
 
@@ -41,7 +48,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .hr {
@@ -56,6 +63,9 @@
   width: auto;
   height: auto;
   margin-left: 1rem;
+  -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
   img {
     width: 1.5rem;
     height: 1.5rem;
