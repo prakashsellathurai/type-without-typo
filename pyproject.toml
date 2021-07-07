@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
 authors = ["prakashsellathurai@gmail.com"]
-name = "prakashsellathurai"
+name = "type-without-typo"
 version = "0.0.0"
-description="Spell-checker"
+description="Toy typo corrector with 80-90 % accuracy"
 [tool.poetry.dependencies]
 flask = "==1.0.2"
 python = "^3.8"
