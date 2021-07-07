@@ -1,9 +1,0 @@
-[tool]
-[tool.poetry]
-authors = ["prakashsellathurai@gmail.com"]
-name = "prakashsellathurai"
-version = "0.0.0"
-description="Spell-checker"
-[tool.poetry.dependencies]
-flask = "==1.0.2"
-python = "^3.8"
