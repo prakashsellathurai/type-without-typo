@@ -47,18 +47,18 @@ const EditablePage = ({ id, fetchedBlocks, err }) => {
   // Update the database whenever blocks change
   useEffect(() => {
     const updatePageOnServer = async (blocks) => {
-      try {
-        await fetch(`${process.env.NEXT_PUBLIC_API}/pages/${id}`, {
-          method: "PUT",
-          credentials: "include",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            blocks: blocks,
-          }),
-        });
-      } catch (err) {
-        console.log(err);
-      }
+      // try {
+      //   await fetch(`${process.env.NEXT_PUBLIC_API}/pages/${id}`, {
+      //     method: "PUT",
+      //     credentials: "include",
+      //     headers: { "Content-Type": "application/json" },
+      //     body: JSON.stringify({
+      //       blocks: blocks,
+      //     }),
+      //   });
+      // } catch (err) {
+      //   console.log(err);
+      // }
     };
     if (prevBlocks && prevBlocks !== blocks) {
       updatePageOnServer(blocks);
