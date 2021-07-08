@@ -107,6 +107,7 @@ class EditableBlock extends React.Component {
   }
 
   handleChange(e) {
+
     this.setState({ ...this.state, html: e.target.value });
   }
 
@@ -164,10 +165,12 @@ class EditableBlock extends React.Component {
     // We need the previousKey to detect a Shift-Enter-combination
     this.setState({ previousKey: e.key });
   }
-
+ 
+ 
   // The openTagSelectorMenu function needs to be invoked on key up. Otherwise
   // the calculation of the caret coordinates does not work properly.
   handleKeyUp(e) {
+    // console.log(e.key);
     if (e.key === CMD_KEY) {
       this.openTagSelectorMenu("KEY_CMD");
     }

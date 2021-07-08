@@ -13,7 +13,7 @@ const Input = ({ formId, id, type, label, required, value, setValue }) => {
         type={type}
         required={required}
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) =>  setValue(e.target.value)}
       />
     </div>
   );
